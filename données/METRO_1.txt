@@ -1,0 +1,51 @@
+# stations
+2048:Argentine
+1803:Pont de Neuilly
+1933:Esplanade de la Défense
+2062:Bastille
+2067:Bérault
+1688:Tuileries
+1945:Franklin-Roosevelt
+1698:Reuilly-Diderot
+1955:Gare de Lyon
+1961:George V
+1964:Châtelet
+1980:Concorde
+1725:Saint-Mandé
+1856:Les Sablons (Jardin d'acclimatation)
+1864:Louvre-Rivoli
+1751:Porte de Vincennes
+1755:Porte Maillot
+1887:La Défense (Grande Arche)
+1892:Hôtel de Ville
+2025:Champs-Elysées-Clémenceau
+1642:Saint-Paul (Le Marais)
+2028:Charles de Gaulle-Etoile
+1773:Palais-Royal (Musée du Louvre)
+1651:Nation
+2035:Château de Vincennes
+# connexions
+1651/1751/60
+1980/2025/60
+1892/1964/60
+1725/2067/60
+1651/1698/60
+1688/1980/60
+1803/1856/60
+1642/2062/120
+1955/2062/120
+1755/1856/60
+1698/1955/120
+2028/2048/60
+1864/1964/60
+1945/2025/60
+1642/1892/60
+1803/1933/60
+1887/1933/60
+1961/2028/60
+2035/2067/60
+1773/1864/60
+1755/2048/60
+1725/1751/60
+1688/1773/60
+1945/1961/60

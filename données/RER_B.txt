@@ -1,0 +1,95 @@
+# stations
+1664:Sevran Livry
+1921:Laplace
+1923:Le Bourget
+1924:Le Guichet
+2054:La Courneuve-Aubervilliers
+2056:Aulnay-sous-Bois
+1672:Saint-Michel Notre-Dame
+1673:Saint-Rémy-lès-Chevreuse
+2059:Bagneux
+1809:Massy-Palaiseau
+1810:Massy-Verrières
+1941:Fontaine-Michalon
+1942:Fontenay-aux-Roses
+2070:Blanc-Mesnil
+1693:Vert-Galant
+2078:Gif-sur-Yvette
+1821:Mitry-Claye
+1697:Villeparisis
+1957:Gare du Nord
+1960:Gentilly
+1705:Robinson
+1706:Aéroport Charles de Gaulle 1
+1663:Sevran-Beaudottes
+1967:Châtelet-Les Halles
+48431:Aéroport Charles de Gaulle 2 TGV
+1976:Cité Universitaire
+1853:Les Baconnets
+1988:Courcelle-sur-Yvette
+1865:Lozère
+1866:Luxembourg
+1996:Denfert-Rochereau
+1999:Drancy
+2006:Bourg-la-Reine
+2011:Bures-sur-Yvette
+1628:Villepinte
+1771:Orsay-Ville
+1775:Palaiseau
+1776:Palaiseau Villebon
+1777:Parc des Expositions
+1650:Port Royal
+1778:Parc de Sceaux
+1912:La Croix-de-Berny
+1914:La Hacquinière
+1660:Sceaux
+2045:Antony
+1918:La Plaine-Stade de France
+2047:Arcueil-Cachan
+# connexions
+1628/1663/120
+1650/1866/60
+1778/1912/120
+1988/2078/180
+1693/1697/180
+1628/1777/120
+1912/2045/60
+1664/1693/180
+1976/1996/120
+1660/2006/120
+2006/2059/120
+1921/2047/120
+1914/2078/60
+1923/2054/180
+1771/2011/120
+1775/1776/120
+1663/2056/180
+1923/1999/180
+1697/1821/240
+1853/1941/60
+2047/2059/120
+1706/1777/300
+1941/2045/120
+1660/1942/60
+1672/1967/120
+1673/1988/180
+1705/1942/180
+1809/1810/120
+1921/1960/60
+1810/1853/60
+1706/48431/180
+1957/1967/180
+1918/1957/300
+1914/2011/120
+1778/2006/60
+1960/1976/60
+1650/1996/120
+1865/1924/120
+1999/2070/120
+1672/1866/120
+2056/2070/120
+1918/2054/120
+1775/1809/120
+1664/2056/180
+1776/1865/120
+1771/1924/120

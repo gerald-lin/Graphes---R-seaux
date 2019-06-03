@@ -1,0 +1,51 @@
+# stations
+1795:Place de Clichy
+2058:Avron
+1674:Stalingrad
+2061:Barbès-Rochechouart
+2066:Belleville
+1684:Ternes
+1812:Ménilmontant
+2071:Blanche
+1694:Victor Hugo
+1822:Monceau
+2079:Couronnes
+1707:Rome
+1978:Colonel Fabien
+1989:Courcelles
+1736:Porte Dauphine (Maréchal de Lattre de Tassigny)
+1629:Villiers
+2028:Charles de Gaulle-Etoile
+1900:Jaurès
+1651:Nation
+1910:La Chapelle
+1784:Père-Lachaise
+2041:Alexandre-Dumas
+1788:Philippe Auguste
+2046:Anvers
+1791:Pigalle
+# connexions
+1684/1989/60
+1978/2066/60
+2041/2058/60
+2046/2061/60
+1651/2058/120
+2066/2079/60
+1822/1989/60
+1791/2071/60
+1910/2061/120
+1629/1822/60
+1629/1707/60
+1791/2046/60
+1684/2028/60
+1694/1736/120
+1784/1812/60
+1900/1978/60
+1788/2041/60
+1674/1900/60
+1707/1795/60
+1694/2028/60
+1812/2079/60
+1795/2071/60
+1784/1788/60
+1674/1910/60

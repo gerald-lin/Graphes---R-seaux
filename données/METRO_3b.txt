@@ -1,0 +1,9 @@
+# stations
+1752:Porte des Lilas
+1659:Gambetta
+1718:Saint-Fargeau
+1783:Pelleport
+# connexions
+1659/1783/60
+1718/1783/60
+1718/1752/60

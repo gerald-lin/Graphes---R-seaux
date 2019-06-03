@@ -1,0 +1,59 @@
+# stations
+1920:Lamarck-Caulaincourt
+1666:Sèvres-Babylone
+2052:Assemblée Nationale
+1669:Solférino
+1938:Falguière
+1686:Trinité-d'Estienne d'Orves
+1691:Vaugirard (Adolphe Chérioux)
+1824:Montparnasse-Bienvenue
+1710:Rue du Bac
+1841:Notre-Dame de Lorette
+1842:Notre-Dame des Champs
+1720:Saint-Georges
+1722:Saint-Lazare
+1980:Concorde
+1984:Convention
+1986:Corentin-Celton
+1869:Madeleine
+1870:Mairie d'Issy
+1743:Porte de la Chapelle
+1750:Porte de Versailles
+1886:Marx-Dormoy
+1632:Volontaires
+3901291:Front Populaire
+1646:Rennes
+1906:Jules Joffrin
+2037:Abbesses
+1781:Pasteur
+1655:Marcadet-Poissonniers
+1791:Pigalle
+# connexions
+1669/2052/60
+1655/1886/60
+1906/1920/120
+1686/1841/60
+1655/1906/60
+1666/1710/60
+1646/1666/60
+1750/1984/120
+1632/1691/60
+1720/1791/60
+1869/1980/60
+1870/1986/60
+1980/2052/120
+1722/1869/120
+1920/2037/60
+1824/1938/60
+1686/1722/60
+1646/1842/60
+1781/1938/60
+1669/1710/60
+1750/1986/60
+1632/1781/60
+1824/1842/60
+1691/1984/60
+1743/1886/120
+1743/3901291/120
+1720/1841/60
+1791/2037/60

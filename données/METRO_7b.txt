@@ -1,0 +1,18 @@
+# stations
+1635:Danube
+1860:Louis Blanc
+1797:Place des Fêtes
+1900:Jaurès
+2002:Botzaris
+2075:Bolivar
+1756:Pré-Saint-Gervais
+2013:Buttes-Chaumont
+# connexions
+1797/2002/120
+2013/2075/60
+1860/1900/60
+1635/1756/60
+1756/1797/120
+2002/2013/60
+1635/2002/60
+1900/2075/60

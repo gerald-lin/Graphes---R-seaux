@@ -1,0 +1,377 @@
+Mini-projet d'algo des graphes : renforcement d'un réseau
+Auteur : Gérald LIN
+
+Doctests pour toutes les fonctions / méthodes implémentées.
+-----------------------------------------------------------
+
+>>> from graphe import *
+>>> from ameliorations import *
+
+
+=================================================
+|												|
+|   Test pour la fonction "charger_donnees()"   |
+|												|
+=================================================
+
+Récupérer les données de la ligne de métro 14:
+	>>> reseau = Graphe()
+	>>> charger_donnees(reseau, "METRO_14.txt")
+
+
+Afficher les identifiants des sommets:
+	>>> sorted(reseau.sommets())
+	[1722, 1757, 1869, 1955, 1964, 2068, 1166824, 1166826, 1166828]
+
+
+Afficher les noms des sommets:
+	>>> sorted(map(reseau.nom_sommet, reseau.sommets()))
+	['Bercy', 'Bibliothèque-François Mitterrand', 'Châtelet', 'Cour Saint-Emilion', 'Gare de Lyon', 'Madeleine', 'Olympiades', 'Pyramides', 'Saint-Lazare']
+
+
+Afficher les arêtes:
+	>>> sorted(reseau.aretes())  # doctest: +NORMALIZE_WHITESPACE
+	[(1722, 1869, 'METRO_14'), (1757, 1869, 'METRO_14'),
+	(1757, 1964, 'METRO_14'), (1955, 1964, 'METRO_14'),
+	(1955, 2068, 'METRO_14'), (2068, 1166828, 'METRO_14'),
+	(1166824, 1166826, 'METRO_14'), (1166826, 1166828, 'METRO_14')]
+
+
+Rajouter au réseau les données de la ligne de métro 3b:
+	>>> charger_donnees(reseau, "METRO_3b.txt")
+
+
+Afficher les identifiants des sommets:
+	>>> sorted(reseau.sommets())
+	[1659, 1718, 1722, 1752, 1757, 1783, 1869, 1955, 1964, 2068, 1166824, 1166826, 1166828]
+
+
+Afficher les arêtes:
+	>>> sorted(reseau.aretes())  # doctest: +NORMALIZE_WHITESPACE
+	[(1659, 1783, 'METRO_3b'), (1718, 1752, 'METRO_3b'),
+	(1718, 1783, 'METRO_3b'), (1722, 1869, 'METRO_14'),
+	(1757, 1869, 'METRO_14'), (1757, 1964, 'METRO_14'),
+	(1955, 1964, 'METRO_14'), (1955, 2068, 'METRO_14'),
+	(2068, 1166828, 'METRO_14'), (1166824, 1166826, 'METRO_14'),
+	(1166826, 1166828, 'METRO_14')]
+
+
+
+-----------------------------------------------------------
+
+
+===================================================
+|												  |
+|   Test de renforcement pour un premier graphe   |
+|												  |
+===================================================
+
+GRAPHE CONNEXE:
+
+	>>> G = Graphe()
+	>>> G.ajouter_sommets(zip('abcdefghi', [None] * 9))
+	>>> G.ajouter_aretes(
+	...     [('a', 'b', None), ('b', 'c', None), ('c', 'd', None), ('d', 'b', None), ('d', 'e', None),
+	...      ('e', 'f', None), ('e', 'g', None), ('g', 'h', None), ('g', 'c', None), ('a', 'i', None)]
+	... )
+
+
+Renvoyer l'ensemble des points d'articulation:
+	>>> sorted(points_articulation(G))
+	['a', 'b', 'e', 'g']
+
+
+Renvoyer l'ensemble des ponts:
+	>>> sorted(map(sorted, ponts(G)))
+	[['a', 'b'], ['a', 'i'], ['e', 'f'], ['g', 'h']]
+
+
+Renvoyer la liste des CSP feuilles et l'ensemble des ponts:
+	>>> feuilles, ensemble_ponts = csp_feuille(G)
+
+	Liste des feuilles:
+	>>> sorted(map(sorted, feuilles))
+	[['f'], ['h'], ['i']]
+
+
+>>> SG = G.sous_graphe_induit(zip(G.sommets(), [None] * G.nombre_sommets()))
+
+Amélioration des ponts du graphe:
+	>>> len(ponts(G))
+	4
+
+	Nombre d'arêtes à ajouter pour éliminer les ponts:
+	>>> len(amelioration_ponts(G))
+	2
+
+	>>> for u, v in amelioration_ponts(G):
+	...     G.ajouter_arete(u, v, None)
+	
+	>>> len(ponts(G))
+	0
+
+
+Amélioration des points d'articulation du graphe:
+	>>> len(points_articulation(SG))
+	4
+
+	Nombre d'arêtes à ajouter pour éliminer les points d'articulation:
+	>>> len(amelioration_points_articulation(SG))
+	3
+
+	>>> for u, v in amelioration_points_articulation(SG):
+	...     SG.ajouter_arete(u, v, None)
+
+	>>> len(points_articulation(SG))
+	0
+
+
+
+-----------------------------------------------------------
+
+====================================================
+|											       |
+|   Test de renforcement pour un deuxième graphe   |
+|										   	       |
+====================================================
+
+GRAPHE CONNEXE:
+
+	>>> G = Graphe()
+	>>> G.ajouter_sommets(zip('abcdefghijklm', [None] * 13))
+	>>> G.ajouter_aretes(
+	...     [('a', 'b', None), ('b', 'c', None), ('c', 'a', None), ('a', 'd', None), ('d', 'e', None),
+	...      ('e', 'f', None), ('f', 'h', None), ('h', 'g', None), ('g', 'i', None), ('i', 'h', None),
+	...      ('g', 'e', None), ('d', 'j', None), ('j', 'k', None), ('k', 'l', None), ('k', 'm', None),
+	...      ('m', 'j', None)]
+	... )
+
+
+Renvoyer l'ensemble des points d'articulation:
+	>>> sorted(points_articulation(G))
+	['a', 'd', 'e', 'j', 'k']
+
+
+Renvoyer l'ensemble des ponts:
+	>>> sorted(map(sorted, ponts(G)))
+	[['a', 'd'], ['d', 'e'], ['d', 'j'], ['k', 'l']]
+
+
+Renvoyer la liste des CSP feuilles et l'ensemble des ponts:
+	>>> feuilles, ensemble_ponts = csp_feuille(G)
+
+	Liste des feuilles:
+	>>> sorted(map(sorted, feuilles))
+	[['a', 'b', 'c'], ['e', 'f', 'g', 'h', 'i'], ['l']]
+
+
+>>> SG = G.sous_graphe_induit(zip(G.sommets(), [None] * G.nombre_sommets()))
+
+Amélioration des ponts du graphe:
+	>>> len(ponts(G))
+	4
+
+	Nombre d'arêtes à ajouter pour éliminer les ponts:
+	>>> len(amelioration_ponts(G))
+	2
+
+	>>> for u, v in amelioration_ponts(G):
+	...     G.ajouter_arete(u, v, None)
+	
+	>>> len(ponts(G))
+	0
+
+
+Amélioration des points d'articulation du graphe:
+	>>> len(points_articulation(SG))
+	5
+
+	Nombre d'arêtes à ajouter pour éliminer les points d'articulation:
+	>>> len(amelioration_points_articulation(SG))
+	3
+
+	>>> for u, v in amelioration_points_articulation(SG):
+	...     SG.ajouter_arete(u, v, None)
+
+	>>> len(points_articulation(SG))
+	0
+
+
+
+-----------------------------------------------------------
+
+=====================================================
+|			 									    |
+|   Test de renforcement pour un troisième graphe   |
+|			 									    |
+=====================================================
+
+GRAPHE NON CONNEXE:
+
+	>>> G = Graphe()
+	>>> G.ajouter_sommets(zip('abcdefghij', [None] * 10))
+	>>> G.ajouter_aretes(
+	...     [('a', 'b', None), ('b', 'c', None), ('c', 'd', None), ('d', 'e', None), ('e', 'f', None),
+	...      ('f', 'd', None), ('d', 'g', None), ('g', 'b', None), ('h', 'i', None), ('i', 'j', None)]
+	... )
+
+
+Renvoyer l'ensemble des points d'articulation:
+	>>> sorted(points_articulation(G))
+	['b', 'd', 'i']
+
+
+Renvoyer l'ensemble des ponts:
+	>>> sorted(map(sorted, ponts(G)))
+	[['a', 'b'], ['h', 'i'], ['i', 'j']]
+
+
+Renvoyer la liste des CSP feuilles et l'ensemble des ponts:
+	>>> feuilles, ensemble_ponts = csp_feuille(G)
+
+	Liste des feuilles:
+	>>> sorted(map(sorted, feuilles))
+	[['a'], ['b', 'c', 'd', 'e', 'f', 'g'], ['h'], ['j']]
+
+
+>>> SG = G.sous_graphe_induit(zip(G.sommets(), [None] * G.nombre_sommets()))
+
+Amélioration des ponts du graphe:
+	>>> len(ponts(G))
+	3
+
+	Nombre d'arêtes à ajouter pour éliminer les ponts:
+	>>> len(amelioration_ponts(G))
+	2
+
+	>>> for u, v in amelioration_ponts(G):
+	...     G.ajouter_arete(u, v, None)
+	
+	>>> len(ponts(G))
+	0
+
+
+Amélioration des points d'articulation du graphe:
+	>>> len(points_articulation(SG))
+	3
+
+	Nombre d'arêtes à ajouter pour éliminer les points d'articulation:
+	>>> len(amelioration_points_articulation(SG))
+	2
+
+	>>> for u, v in amelioration_points_articulation(SG):
+	...     SG.ajouter_arete(u, v, None)
+
+	>>> len(points_articulation(SG))
+	0
+
+
+-----------------------------------------------------------
+
+======================================================
+|			 									     |
+|   Tests de renforcement pour un quatrième graphe   |
+|			 									     |
+======================================================
+
+GRAPHE A 2 SOMMETS:
+
+	>>> G = Graphe()
+	>>> G.ajouter_sommets(zip('ab', [None] * 2))
+	>>> G.ajouter_aretes(
+	...     [('a', 'b', None)]
+	... )
+
+
+Renvoyer l'ensemble des ponts:
+	>>> sorted(map(sorted, ponts(G)))
+	[['a', 'b']]
+
+
+Renvoyer la liste des CSP feuilles et l'ensemble des ponts:
+	>>> feuilles, ensemble_ponts = csp_feuille(G)
+
+	Liste des feuilles:
+	>>> sorted(map(sorted, feuilles))
+	[['a'], ['b']]
+
+
+>>> sorted(map(sorted,amelioration_ponts(G)))
+[['a', 'b']]
+
+
+
+-----------------------------------------------------------
+
+==========================
+|			 			 |
+|   Test sur un réseau   |
+|			 			 |
+==========================
+
+CHARGEMENT DES RER:
+
+>>> reseau = Graphe()
+
+>>> charger_donnees(reseau, "RER_A.txt")
+>>> charger_donnees(reseau, "RER_B.txt")
+
+>>> len(ponts(reseau))
+91
+
+>>> for u, v in amelioration_ponts(reseau):
+...     reseau.ajouter_arete(u, v, None)
+
+>>> len(ponts(reseau))
+0
+
+
+>>> reseau = Graphe()
+
+>>> charger_donnees(reseau, "RER_A.txt")
+>>> charger_donnees(reseau, "RER_B.txt")
+
+>>> len(points_articulation(reseau))
+83
+
+>>> for u, v in amelioration_points_articulation(reseau):
+...     reseau.ajouter_arete(u, v, None)
+
+>>> len(points_articulation(reseau))
+0
+
+
+
+-----------------------------------------------------------
+
+===========================================
+|										  |
+|   Test pour les fonctions auxiliaires   |
+|										  |
+===========================================
+
+INITIALISER UN DICTIONNAIRE:
+
+>>> dico = init_dict(['a', 'b', 'c'], 0)
+>>> len(dico)
+3
+>>> dico['a']
+0
+>>> dico['b']
+0
+>>> dico['c']
+0
+
+
+NOMBRE DE SUCCESSEURS:
+
+>>> G = Graphe()
+>>> G.ajouter_sommets(zip('abcdefg', [None] * 7))
+>>> G.ajouter_aretes(
+...     [('a', 'b', None), ('b', 'c', None), ('c', 'a', None), ('a', 'd', None), ('d', 'f', None),
+...      ('f', 'a', None), ('a', 'g', None)]
+... )
+
+>>> _none, parent, _none_ = numerotations(G)
+>>> nb_successeurs('a', G, parent)
+3

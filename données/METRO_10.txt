@@ -1,0 +1,49 @@
+# stations
+1666:Sèvres-Babylone
+1927:Duroc
+2057:Avenue Emile-Zola
+1811:Maubert-Mutualité
+1814:Michel-Ange-Auteuil
+1816:Michel-Ange-Molitor
+1690:Vaneau
+1818:Mirabeau
+1951:Gare d'Austerlitz
+2346:Porte d'Auteuil
+1977:Cluny-La Sorbonne
+1867:Mabillon
+2256:Eglise d'Auteuil
+2004:Boulogne-Jean-Jaurès
+2005:Boulogne Pont de Saint-Cloud
+2018:Cardinal-Lemoine
+2026:Chardon-Lagache
+1903:Javel-André-Citroen
+2031:Charles Michels
+1907:Jussieu
+1653:Odéon
+1657:La Motte-Picquet-Grenelle
+1661:Ségur
+# connexions
+2031/2057/60
+1818/1903/60
+1903/2031/60
+1903/2256/120
+1653/1867/60
+1690/1927/60
+1666/1690/60
+1811/2018/60
+1814/2346/60
+1661/1927/120
+1818/2026/60
+1657/1661/60
+1811/1977/60
+1907/2018/60
+1816/2346/120
+1907/1951/120
+1666/1867/120
+1653/1977/60
+1814/2256/120
+2004/2346/180
+1816/2004/180
+1816/2026/60
+1657/2057/60
+2004/2005/120

@@ -1,0 +1,19 @@
+# stations
+1955:Gare de Lyon
+1166824:Olympiades
+1166826:Bibliothèque-François Mitterrand
+1166828:Cour Saint-Emilion
+1869:Madeleine
+1964:Châtelet
+2068:Bercy
+1722:Saint-Lazare
+1757:Pyramides
+# connexions
+1722/1869/120
+1166824/1166826/60
+1166826/1166828/60
+1955/2068/60
+1757/1869/60
+1757/1964/120
+1955/1964/180
+2068/1166828/60

@@ -1,0 +1,51 @@
+# stations
+2050:Arts-et-Métiers
+1802:Pont de Levallois-Bécon
+1935:Europe
+1683:Temple
+1949:Gallieni (Parc de Bagnolet)
+1846:Opéra
+1722:Saint-Lazare
+1728:Rue Saint-Maur
+1862:Louise Michel
+1737:Porte de Bagnolet
+1738:Porte de Champerret
+2007:Bourse
+1881:Malesherbes
+1629:Villiers
+1760:Quatre Septembre
+1889:Havre-Caumartin
+1634:Wagram
+1764:Réaumur-Sébastopol
+1647:République
+1779:Parmentier
+1784:Père-Lachaise
+1786:Pereire
+1659:Gambetta
+2044:Anatole-France
+1662:Sentier
+# connexions
+1760/1846/60
+1722/1935/60
+1760/2007/60
+1862/2044/60
+1846/1889/60
+1764/2050/60
+1738/1862/60
+1728/1784/60
+1662/2007/60
+1659/1784/60
+1662/1764/60
+1629/1881/60
+1647/1779/60
+1634/1881/60
+1629/1935/120
+1683/2050/60
+1802/2044/60
+1659/1737/60
+1722/1889/60
+1737/1949/60
+1647/1683/60
+1738/1786/60
+1634/1786/60
+1728/1779/60

@@ -1,0 +1,65 @@
+# stations
+1795:Place de Clichy
+1927:Duroc
+1799:Plaisance
+1819:Miromesnil
+1947:Gabriel-Péri
+1948:Gaîté
+1692060:Carrefour-Pleyel
+1824:Montparnasse-Bienvenue
+1959:Garibaldi
+140078:Saint-Denis-Université
+1969:Châtillon Montrouge
+1716:Basilique de Saint-Denis
+1717:Saint-Denis-Porte de Paris
+1719:Saint-François-Xavier
+1722:Saint-Lazare
+1858:Liège
+1662795:Les Agnettes
+1662797:Asnières-Gennevilliers Les Courtilles
+1741:Porte de Clichy
+1872:Mairie de Clichy
+1874:Mairie de Saint-Ouen
+1748:Porte de Saint-Ouen
+1749:Porte de Vanves
+1879:Malakoff-Plateau de Vanves
+1880:Malakoff-Rue Etienne Dolet
+2009:Brochant
+1888:Guy-Môquet
+1638:Varenne
+1897:Invalides
+2025:Champs-Elysées-Clémenceau
+1656:La Fourche
+1787:Pernety
+# connexions
+1824/1927/60
+1638/1719/60
+1656/1888/120
+1748/1959/120
+1716/140078/120
+1748/1888/60
+1656/2009/60
+1874/1959/60
+1638/1897/120
+1947/1662795/120
+1819/2025/120
+1787/1948/60
+1722/1858/60
+1795/1858/60
+1897/2025/60
+1662795/1662797/60
+1741/2009/60
+1656/1795/60
+1719/1927/60
+1716/1717/60
+1879/1880/120
+1880/1969/60
+1787/1799/60
+1741/1872/120
+1722/1819/120
+1749/1879/60
+1824/1948/120
+1717/1692060/120
+1874/1692060/120
+1749/1799/120
+1872/1947/180

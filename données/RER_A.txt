@@ -1,0 +1,93 @@
+# stations
+2053:Auber
+1670:Saint-Germain-en-Laye
+1671:Saint-Maur Créteil
+1801:Poissy
+1680:Sucy Bonneuil
+1943:Fontenay-sous-Bois
+1689:Val de Fontenay
+2074:Boissy-Saint-Léger
+1955:Gare de Lyon
+1829:Nanterre-Préfecture
+1830:Nanterre-Université
+1831:Nanterre-Ville
+1837:Neuilly-Plaisance
+1838:Nogent-sur-Marne
+1839:Noisiel
+1840:Noisy-Champs
+1713:Rueil-Malmaison
+1970:Chatou-Croissy
+48433:Neuville-Université
+1967:Châtelet-Les Halles
+48429:Cergy-Le-Haut
+1848:Le Parc de Saint-Maur
+1850:Le Vésinet-Centre
+1851:Le Vésinet-Le Pecq
+161468:Val d'europe
+1983:Conflans-Fin d'Oise
+1859:Lognes
+1878:Maisons-Laffitte
+2010:Bry-sur-Marne
+2012:Bussy-Saint-Georges
+1885:Marne-la-Vallée Chessy
+1631:Vincennes
+1887:La Défense (Grande Arche)
+1636:Torcy
+2021:Cergy-Préfecture
+1894:Houilles Carrières-sur-Seine
+2022:Cergy-Saint-Christophe
+2024:Champigny
+1643:Sartrouville
+2028:Charles de Gaulle-Etoile
+2771311:Achères Grand Cormier
+1904:Joinville-le-Pont
+1651:Nation
+1652:Noisy-le-Grand (Mont d'Est)
+2039:Achères-Ville
+1919:La Varenne-Chennevières
+# connexions
+1838/1904/120
+1848/2024/180
+1670/1851/180
+1689/1837/180
+1713/1970/120
+1652/1840/180
+1983/2039/180
+1829/1830/120
+1839/1840/180
+1983/48433/180
+1636/1859/120
+1829/1894/240
+1885/161468/180
+1839/1859/120
+1680/2074/120
+2028/2053/180
+2021/48433/180
+2012/161468/240
+1919/2024/120
+2021/2022/180
+1680/1919/180
+1955/1967/180
+1830/1831/120
+1636/2012/240
+1643/1894/180
+1837/2010/60
+1671/1904/120
+1850/1970/120
+1967/2053/180
+1801/2771311/240
+1651/1955/120
+1631/1943/180
+1838/1943/120
+1713/1831/120
+1631/1651/180
+1652/2010/120
+1671/1848/60
+1878/2039/360
+1878/2771311/240
+2022/48429/180
+1887/2028/240
+1829/1887/120
+1643/1878/120
+1850/1851/120
+1631/1689/240

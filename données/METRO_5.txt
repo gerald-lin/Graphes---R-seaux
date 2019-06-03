@@ -1,0 +1,45 @@
+# stations
+1922:Laumière
+1674:Stalingrad
+1932:Eglise de Pantin
+2062:Bastille
+2072:Bobigny-Pantin (Raymond Queneau)
+1951:Gare d'Austerlitz
+1953:Gare de l'Est (Verdun)
+1700:Richard-Lenoir
+1957:Gare du Nord
+2089:Bobigny-Pablo-Picasso
+1843:Oberkampf
+1746:Porte de Pantin
+2008:Bréguet-Sabin
+1759:Quai de la Rapée
+2017:Campo-Formio
+1891:Hoche
+1641:Saint-Marcel
+1898:Jacques-Bonsergent
+1900:Jaurès
+1772:Ourcq
+1647:République
+1648:Place d'Italie
+# connexions
+1647/1898/60
+1647/1843/60
+1891/1932/60
+1641/1951/60
+1700/2008/60
+1674/1900/60
+1900/1922/120
+2072/2089/180
+1674/1957/120
+1898/1953/60
+1772/1922/60
+1759/1951/120
+1746/1891/120
+1759/2062/120
+1641/2017/60
+1953/1957/120
+1700/1843/60
+2008/2062/60
+1746/1772/60
+1648/2017/60
+1932/2072/120

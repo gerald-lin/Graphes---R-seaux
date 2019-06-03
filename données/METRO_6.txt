@@ -1,0 +1,57 @@
+# stations
+1665:Sèvres-Lecourbe
+1926:Dupleix
+1930:Edgar-Quinet
+2065:Bel-Air
+2068:Bercy
+2069:Bir-Hakeim (Grenelle)
+2073:Boissière
+1824:Montparnasse-Bienvenue
+2081:Daumesnil (Félix Eboué)
+2082:Dugommier
+1962:Glacière
+1836:Nationale
+1974:Chevaleret
+1987:Corvisart
+1996:Denfert-Rochereau
+2016:Cambronne
+1637:Trocadéro
+1640:Saint-Jacques
+1644:Quai de la Gare
+1645:Raspail
+2028:Charles de Gaulle-Etoile
+1648:Place d'Italie
+1651:Nation
+1780:Passy
+1909:Kléber
+1781:Pasteur
+1657:La Motte-Picquet-Grenelle
+1789:Picpus
+# connexions
+2065/2081/60
+1909/2073/60
+1651/1789/60
+1637/2073/60
+1962/1987/60
+1644/2068/120
+2081/2082/60
+2068/2082/60
+1637/1780/60
+1644/1974/60
+1780/2069/60
+1645/1996/60
+1909/2028/120
+1640/1962/60
+1645/1930/60
+1665/2016/60
+1926/2069/60
+1789/2065/60
+1665/1781/60
+1648/1836/60
+1648/1987/60
+1824/1930/60
+1640/1996/60
+1657/2016/60
+1836/1974/60
+1781/1824/60
+1657/1926/60

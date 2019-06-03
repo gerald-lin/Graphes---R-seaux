@@ -1,0 +1,75 @@
+# stations
+1804:Pont de Sèvres
+1677:Strasbourg-Saint-Denis
+1936:Exelmans
+1814:Michel-Ange-Auteuil
+1816:Michel-Ange-Molitor
+1945:Franklin-Roosevelt
+1819:Miromesnil
+1702:Richelieu-Drouot
+2088:Billancourt
+1704:Robespierre
+1708:Rue de la Pompe (Avenue Georges Mandel)
+1709:Rue des Boulets
+1712:Grands Boulevards
+1714:Saint-Ambroise
+1843:Oberkampf
+1715:Saint-Augustin
+1971:Chaussée d'Antin (La Fayette)
+1730:Saint-Philippe du Roule
+1993:Croix-de-Chavaux (Jacques Duclos)
+1873:Mairie de Montreuil
+1745:Porte de Montreuil
+1747:Porte de Saint-Cloud
+2001:Bonne Nouvelle
+1882:Maraîchers
+1884:Marcel Sembat
+2014:Buzenval
+1633:Voltaire (Léon Blum)
+1762:Ranelagh
+1889:Havre-Caumartin
+1637:Trocadéro
+1895:Iéna
+1899:Jasmin
+1647:République
+2032:Charonne
+1651:Nation
+2043:Alma-Marceau
+1917:La Muette
+# connexions
+1873/1993/120
+1647/1843/60
+1762/1917/60
+1762/1899/60
+1633/2032/60
+1714/1843/60
+1715/1889/60
+1730/1819/60
+1747/1884/120
+1708/1917/120
+1804/2088/60
+1945/2043/60
+1651/2014/60
+1895/2043/60
+1633/1714/60
+1814/1816/60
+1709/2032/60
+1651/1709/60
+1637/1895/60
+1814/1899/120
+1816/1936/60
+1704/1745/120
+1637/1708/60
+1712/2001/60
+1882/2014/60
+1889/1971/60
+1702/1712/60
+1747/1936/60
+1677/2001/60
+1647/1677/120
+1715/1819/60
+1745/1882/60
+1730/1945/60
+1702/1971/60
+1884/2088/60
+1704/1993/60

@@ -1,0 +1,27 @@
+# stations
+1761:Rambuteau
+2050:Arts-et-Métiers
+1892:Hôtel de Ville
+1797:Place des Fêtes
+1963:Goncourt (Hôpital Saint-Louis)
+1964:Châtelet
+1647:République
+1905:Jourdain
+1682:Télégraphe
+1875:Mairie des Lilas
+2066:Belleville
+1752:Porte des Lilas
+1758:Pyrénées
+# connexions
+1761/1892/60
+1752/1875/60
+1682/1797/60
+1682/1752/120
+1761/2050/60
+1892/1964/60
+1797/1905/60
+1758/1905/60
+1647/2050/120
+1758/2066/60
+1647/1963/60
+1963/2066/60

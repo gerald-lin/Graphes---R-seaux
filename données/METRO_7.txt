@@ -1,0 +1,77 @@
+# stations
+1925:Le Kremlin-Bicêtre
+2055:Aubervilliers Pantin (4 Chemins)
+1800:Poissonnière
+1674:Stalingrad
+1805:Pont Marie (Cité des Arts)
+1806:Pont Neuf
+1808:Porte d'Italie
+1681:Sully-Morland
+1685:Tolbiac
+1944:Fort d'Aubervilliers
+1695:Villejuif-Louis Aragon
+2080:Crimée
+1696:Villejuif-Paul Vaillant Couturier (Hôpital Paul Brousse)
+1953:Gare de l'Est (Verdun)
+2085:Château Landon
+1703:Riquet
+1964:Châtelet
+1971:Chaussée d'Antin (La Fayette)
+1846:Opéra
+1849:Le Peletier
+1854:Les Gobelins
+1985:Corentin-Cariou
+1860:Louis Blanc
+1734:Porte d'Ivry
+1740:Porte de Choisy
+1871:Mairie d'Ivry
+1744:Porte de la Villette
+1876:Maison Blanche
+1757:Pyramides
+2015:Cadet
+2020:Censier-Daubenton
+1639:Villejuif-Léo Lagrange
+1773:Palais-Royal (Musée du Louvre)
+1648:Place d'Italie
+1649:Place Monge (Jardin des Plantes)
+1907:Jussieu
+1911:La Courneuve-8-Mai-1945
+1790:Pierre et Marie Curie
+# connexions
+1800/2015/60
+1854/2020/60
+1740/1808/60
+1805/1964/60
+1849/1971/60
+1860/2085/60
+1773/1806/120
+1846/1971/60
+1681/1907/60
+1674/1860/120
+1744/1985/120
+1703/2080/60
+1876/1925/120
+1757/1773/60
+1639/1925/60
+1649/2020/60
+1648/1685/60
+1944/2055/120
+1695/1696/60
+1639/1696/120
+1649/1907/60
+1734/1740/60
+1681/1805/60
+1685/1876/120
+1744/2055/120
+1849/2015/60
+1806/1964/60
+1911/1944/60
+1985/2080/60
+1790/1871/120
+1757/1846/60
+1808/1876/60
+1648/1854/60
+1674/1703/60
+1800/1953/60
+1953/2085/60
+1734/1790/60
